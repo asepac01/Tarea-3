@@ -28,3 +28,10 @@
 class Ciclo:
     def __init__(self, num1=4):
         self.numero = num1
+
+    def usoDelWhile(self):
+        carro = input("¤ Ingrese una vocal: ")
+        carro = carro.lower()
+        while carro not in ("a", "e", "i", "o", "u"):
+            carro = input(" » Vuelva a ingresar una vocal: ").lower()
+        print('¤ Felicidades, el caracter {} si es una vocal.'.format(carro))
